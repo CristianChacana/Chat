@@ -1,14 +1,15 @@
+
 .main_container {
 display: grid;
 grid-template-columns: 1fr 7fr;
-grid-template-rows: 1fr 8fr;
+grid-template-rows: 1fr 8fr 1fr;
 grid-template-areas: 
 "titulo titulo"
 "opciones principal"
 "pie pie"
 ;
-height: 90vh;
-row-gap: 10px;
+height: 98vh;
+row-gap: 5px;
 column-gap: 10px; 
 
 }
@@ -29,13 +30,24 @@ main {
 
   .Contenedor{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 1fr;
-  row-gap: 10px;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 1fr 1.5fr;
+  row-gap: 2px;
   column-gap: 10px;
   font-family: 'Comic Sans MS';
-   
+  height: 80vh;
+  padding:20px   
   }
+  .avatar{
+  height: 130px;
+  width: 365px;
+  }
+   .avatar3{
+  height: 300px;
+  
+  
+  }
+  
   
 aside{
 grid-area: opciones;
@@ -46,21 +58,14 @@ grid-area: opciones;
  flex-direction: column;
  justify-content: space-between;
  }
-
-footer {
-  
-  grid-area: pie;
-  text-align: center;
-  background-color: lightgray;
-  font-family: 'Comic Sans MS';
-
-  }
-  
+   
   .Foto{
   
   display: flexbox;
   flex-direction: column;
-  justify-content: center;
+ 
+ height: 80px;
+  
 
   }
     .Foto3{
@@ -68,18 +73,22 @@ footer {
   display: flexbox;
   flex-direction: column;
   justify-content: center;
-  height: 30%;
+  align-items: center;
+  height: 150px;
+  
 
   }
 
-  .Foto img{
+  .avatar img{
   border: solid;
   max-width: 90%;
+ height: 130px;
+  width: 400px;
      }
      .Foto3 img{
   border: solid;
-  max-width: 50%;
-max-height: 80%;
+ height: 350px;
+
 
      }
      .comprar{
@@ -87,4 +96,9 @@ max-height: 80%;
      color: white;
      }
 
+  footer {
   
+  grid-area: pie;
+  text-align: center;
+  background-color: lightgray;
+  font-family: 'Comic Sans MS';}
